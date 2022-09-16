@@ -1,0 +1,85 @@
+:root{
+    --blue: #008FD6;
+}
+
+
+
+.rooms{
+    display: flex;
+    justify-content: center;
+}
+.rooms-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+.rooms-hero-text{
+    width: 30%;
+    height: 350px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.rooms-hero-text h1{
+    font-size: 30px;
+    color: #fff;
+}
+
+.rooms-hero-img{
+    width: 70%;
+    height: 350px;
+}
+.rooms-hero-img img{
+    width: 850px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*
+
+------------ Dispo ------------- 
+
+*/
+
+
+.dispo-hero{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+
+/* 
+
+--------------- Responsive first section rooms --------------------
+
+*/
+
+
+@media screen and (max-width: 1000px) {
+    .rooms .rooms-text{
+        flex-direction: column-reverse;
+        margin: 0 1rem 0 1rem;
+    }
+    .rooms-hero-text{
+        width: 100%;
+        height: calc(30px + 4.5vw);
+        padding: 1rem;
+        align-items: center;
+    }
+    .rooms-hero-img{
+        width: 100%;
+    }
+}
