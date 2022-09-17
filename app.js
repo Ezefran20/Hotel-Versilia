@@ -17,6 +17,14 @@ app.get('/room', (req, res) => {
     res.render('../views/rooms.ejs')
 })
 
+app.get('/services', (req, res) =>{
+    res.render('../views/servicios.ejs')
+})
+app.get('/tarifas', (req, res) =>{
+    res.render('../views/tarifas.ejs')
+})
+
+
 app.listen(PORT, () =>{
     console.log(`Listen at port: ${PORT}`);
 })

@@ -18,7 +18,7 @@
 }
 
 .rooms-hero-text{
-    width: 30%;
+    width: 310px;
     height: 350px;
     background: var(--blue);
     display: flex;
@@ -29,11 +29,16 @@
 .rooms-hero-text h1{
     font-size: 30px;
     color: #fff;
+    animation-name: zoomEffect;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
 }
 
 .rooms-hero-img{
-    width: 70%;
+    width: 770px;
     height: 350px;
+
 }
 .rooms-hero-img img{
     width: 850px;
@@ -48,8 +53,13 @@
 ------------ Dispo ------------- 
 
 */
-
-
+.dispo-hero,
+.room{
+    animation-name: zoomEffect;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+}
 .dispo-hero{
     margin-top: 2.5rem;
     display: flex;
@@ -64,6 +74,15 @@
 --------------- Responsive first section rooms --------------------
 
 */
+@media screen and (max-width: 1130px) {
+    .rooms-hero-text{
+        width: 300px;
+    }
+    
+    .rooms-hero-img{
+        width: 600px;
+    }
+}
 
 
 @media screen and (max-width: 1000px) {
