@@ -93,7 +93,8 @@ html{
 
 .header{
     width: 100% !important;
-    height: 110px;
+    min-height: 110px;
+    max-height: auto;
     background: #fff;
 }
 
@@ -153,7 +154,8 @@ img{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 110px;
+    min-height: 110px;
+    max-height: auto;
 }
 
 .mobile-subMenu{
@@ -212,7 +214,7 @@ img{
     width: 100%;
     height: 900px;
     position: relative;
-    background-image: url(/img/slider\ \(2\).jpg);
+    background-image: url(/img/slider\ \(1\).jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,7 +232,7 @@ img{
 
 @keyframes carousel {
     0% {
-        background-image: url(/img/slider\ \(2\).jpg);
+        background-image: url(/img/slider\ \(1\).jpg);
     }
     25% {
         background-image: url(/img/slider\ \(5\).jpg);
@@ -250,12 +252,15 @@ img{
     text-align: center;
 }
 .carrusel .info-text > h1{
-    font-size: calc(13px + 3vw);
-
+    margin-bottom: -25px;
+    font-size: calc(15px + 3vw);
+    color: #008FD6;
+    filter: drop-shadow(4px 4px 2px #000);
 }
 .carrusel .info-text > p{
-    color: #000;
-    font-size:  calc(10px + 1.5vw);
+    font-size:  calc(13px + 1.5vw);
+    color: #fff;
+    filter: drop-shadow(2px 2px 1px #000);
 }
 
 .wade{
@@ -272,11 +277,15 @@ img{
 
     }
     .carrusel .info-text > h1{
-        font-size: 40px;
-    
+        margin-bottom: -10px;
+        font-size: 43px;
+        color: #008FD6;
+        filter: drop-shadow(4px 4px 2px #000);
     }
     .carrusel .info-text > p{
-        font-size:  22px;
+        font-size:  24px;
+        color: #fff;
+        filter: drop-shadow(4px 4px 2px #000);
     }
 }
 
