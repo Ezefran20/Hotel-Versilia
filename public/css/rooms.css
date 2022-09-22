@@ -113,6 +113,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .dispo-hero{
@@ -206,7 +207,6 @@
     color: #008FD6;
     background-color: #fff;
     border: 3px solid #008FD6;
-
 }
 .room a i{
     color: #008FD6;
