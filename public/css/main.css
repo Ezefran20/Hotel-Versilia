@@ -465,6 +465,16 @@ a i{
     SERVICIOS
 */
 
+/* Animation services */
+
+.services-content,
+.services-hero{
+    animation-name: zoomEffect;
+    animation-timing-function: linear;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+}
+
 .services-hero{
     text-align: center;
     display: flex;
@@ -523,8 +533,11 @@ a i{
     height: 100%;
     grid-row-start: span 2;
 }
-
-.box-img:hover{
+.box-img a img{
+    border: transparent 1px solid;
+    transition: .5s all;
+}
+.box-img a img:hover{
     border: #008FD6 1px solid;
     cursor: pointer;
     box-shadow: #008FD6 2px 2px 15px;
@@ -547,6 +560,57 @@ a i{
 .grid-box{
     width: 80%;
 }
+
+
+.modal{
+    position: fixed;
+    background: #333;
+    top: 0;bottom: 0;left: 0;right: 0;
+    display: flex;
+
+    --opacity: 0;
+    --pointer: none;
+
+    opacity: var(--opacity);
+    pointer-events: var(--pointer);
+    transition: opacity .5s;
+}
+
+.modal:target{
+    --opacity: 1;
+    --pointer: unset;
+}
+
+.modal-container{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.modal-container img{
+    border-radius: .5rem;
+}
+.modal-container .btn{
+    margin-top: .5rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1150px) {
